@@ -1,0 +1,11 @@
+ export PATH=/opt/riscv32gc/bin/:$PATH
+
+master_write_32 $c_path $add1 0x00300113
+
+master_write_32 $c_path $add2 0x00400193
+
+
+master_write_32 $c_path $add3 0x003100B3
+
+
+master_read_32 $c_path $add1 1
